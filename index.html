@@ -1,7 +1,39 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário de Jogos - COPA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="qatar">
+    <div id="app">
+      <header>
+        <img src="./assets/logo.svg" alt="" />
+        <br />
+        <div id="select">
+          <select onchange="criarGrupo(event)">
+            <option>SELECIONE O GRUPO</option>
+            <option>GRUPO A</option>
+            <option>GRUPO B</option>
+            <option>GRUPO C</option>
+            <option>GRUPO D</option>
+            <option>GRUPO E</option>
+            <option>GRUPO F</option>
+            <option>GRUPO G</option>
+            <option>GRUPO H</option>
+          </select>
+        </div>
+      </header>
+      <main id="cards"></main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
