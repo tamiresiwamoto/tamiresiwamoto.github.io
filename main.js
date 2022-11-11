@@ -1,3 +1,40 @@
+// let offset = new Date().getTimezoneOffset()
+// console.log(offset)
+// console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
+
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+console.log(timezone)
+
+let hour7 = "07:00"
+let hour10 = "10:00"
+let hour12 = "12:00"
+let hour13 = "13:00"
+let hour16 = "16:00"
+
+if (timezone === "America/Sao_Paulo") {
+  hour7 = "08:00"
+  hour10 = "10:00"
+  hour12 = "12:00"
+  hour13 = "13:00"
+  hour16 = "16:00"
+}
+
+if (timezone === "Europe/Lisbon") {
+  hour7 = "10:00"
+  hour10 = "13:00"
+  hour12 = "15:00"
+  hour13 = "16:00"
+  hour16 = "19:00"
+}
+
+if (timezone === "Europe/Berlin") {
+  hour7 = "12:00"
+  hour10 = "14:00"
+  hour12 = "16:00"
+  hour13 = "17:00"
+  hour16 = "20:00"
+}
+
 function createGame(player1, hour, player2) {
   return `
     <li>
@@ -51,7 +88,7 @@ let abertura = createCardAbertura(
   "ABERTURA",
   "20/11",
   "domingo",
-  createGame("qatar", "13:00", "ecuador")
+  createGame("qatar", hour13, "ecuador")
 )
 
 document.querySelector("#cards").innerHTML = abertura
@@ -61,21 +98,21 @@ let grupoA =
     "grupoA",
     "21/11",
     "segunda",
-    createGame("senegal", "13:00", "netherlands")
+    createGame("senegal", hour13, "netherlands")
   ) +
   createCard(
     "grupoA",
     "25/11",
     "sexta",
-    createGame("qatar", "10:00", "senegal") +
-      createGame("netherlands", "13:00", "ecuador")
+    createGame("qatar", hour10, "senegal") +
+      createGame("netherlands", hour13, "ecuador")
   ) +
   createCard(
     "grupoA",
     "29/11",
     "terça",
-    createGame("netherlands", "12:00", "qatar") +
-      createGame("ecuador", "12:00", "senegal")
+    createGame("netherlands", hour12, "qatar") +
+      createGame("ecuador", hour12, "senegal")
   )
 delay = 0
 
@@ -84,22 +121,22 @@ let grupoB =
     "grupoB",
     "21/11",
     "segunda",
-    createGame("england", "10:00", "iran") +
-      createGame("united states", "16:00", "wales")
+    createGame("england", hour10, "iran") +
+      createGame("united states", hour16, "wales")
   ) +
   createCard(
     "grupoB",
     "25/11",
     "sexta",
-    createGame("wales", "07:00", "iran") +
-      createGame("england", "16:00", "united states")
+    createGame("wales", hour7, "iran") +
+      createGame("england", hour16, "united states")
   ) +
   createCard(
     "grupoB",
     "29/11",
     "terça",
-    createGame("iran", "16:00", "united states") +
-      createGame("wales", "16:00", "england")
+    createGame("iran", hour16, "united states") +
+      createGame("wales", hour16, "england")
   )
 delay = 0
 
@@ -108,22 +145,22 @@ let grupoC =
     "grupoC",
     "22/11",
     "terça",
-    createGame("argentina", "07:00", "saudi arabia") +
-      createGame("mexico", "13:00", "poland")
+    createGame("argentina", hour7, "saudi arabia") +
+      createGame("mexico", hour13, "poland")
   ) +
   createCard(
     "grupoC",
     "26/11",
     "sábado",
-    createGame("poland", "10:00", "saudi arabia") +
-      createGame("argentina", "16:00", "mexico")
+    createGame("poland", hour10, "saudi arabia") +
+      createGame("argentina", hour16, "mexico")
   ) +
   createCard(
     "grupoC",
     "30/11",
     "quarta",
-    createGame("poland", "16:00", "argentina") +
-      createGame("saudi arabia", "16:00", "mexico")
+    createGame("poland", hour16, "argentina") +
+      createGame("saudi arabia", hour16, "mexico")
   )
 delay = 0
 
@@ -132,22 +169,22 @@ let grupoD =
     "grupoD",
     "22/11",
     "terça",
-    createGame("denmark", "10:00", "tunisia") +
-      createGame("france", "16:00", "australia")
+    createGame("denmark", hour10, "tunisia") +
+      createGame("france", hour16, "australia")
   ) +
   createCard(
     "grupoD",
     "26/11",
     "sábado",
-    createGame("tunisia", "07:00", "australia") +
-      createGame("france", "13:00", "denmark")
+    createGame("tunisia", hour7, "australia") +
+      createGame("france", hour13, "denmark")
   ) +
   createCard(
     "grupoD",
     "30/11",
     "quarta",
-    createGame("tunisia", "12:00", "france") +
-      createGame("australia", "12:00", "denmark")
+    createGame("tunisia", hour12, "france") +
+      createGame("australia", hour12, "denmark")
   )
 delay = 0
 
@@ -156,22 +193,22 @@ let grupoE =
     "grupoE",
     "23/11",
     "quarta",
-    createGame("germany", "10:00", "japan") +
-      createGame("spain", "13:00", "costa rica")
+    createGame("germany", hour10, "japan") +
+      createGame("spain", hour13, "costa rica")
   ) +
   createCard(
     "grupoE",
     "27/11",
     "domingo",
-    createGame("japan", "07:00", "costa rica") +
-      createGame("spain", "16:00", "germany")
+    createGame("japan", hour7, "costa rica") +
+      createGame("spain", hour16, "germany")
   ) +
   createCard(
     "grupoE",
     "01/12",
     "quinta",
-    createGame("japan", "16:00", "spain") +
-      createGame("costa rica", "16:00", "germany")
+    createGame("japan", hour16, "spain") +
+      createGame("costa rica", hour16, "germany")
   )
 delay = 0
 
@@ -180,22 +217,22 @@ let grupoF =
     "grupoF",
     "23/11",
     "quarta",
-    createGame("morocco", "07:00", "croatia") +
-      createGame("belgium", "16:00", "canada")
+    createGame("morocco", hour7, "croatia") +
+      createGame("belgium", hour16, "canada")
   ) +
   createCard(
     "grupoF",
     "27/11",
     "domingo",
-    createGame("belgium", "10:00", "morocco") +
-      createGame("croatia", "13:00", "canada")
+    createGame("belgium", hour10, "morocco") +
+      createGame("croatia", hour13, "canada")
   ) +
   createCard(
     "grupoF",
     "01/12",
     "quinta",
-    createGame("croatia", "12:00", "belgium") +
-      createGame("canada", "12:00", "morocco")
+    createGame("croatia", hour12, "belgium") +
+      createGame("canada", hour12, "morocco")
   )
 delay = 0
 
@@ -204,22 +241,22 @@ let grupoG =
     "groupG",
     "24/11",
     "quinta",
-    createGame("switzerland", "07:00", "cameroon") +
-      createGame("brasil", "16:00", "serbia")
+    createGame("switzerland", hour7, "cameroon") +
+      createGame("brasil", hour16, "serbia")
   ) +
   createCard(
     "groupG",
     "28/11",
     "segunda",
-    createGame("cameroon", "07:00", "serbia") +
-      createGame("brasil", "13:00", "switzerland")
+    createGame("cameroon", hour7, "serbia") +
+      createGame("brasil", hour13, "switzerland")
   ) +
   createCard(
     "groupG",
     "02/12",
     "sexta",
-    createGame("brasil", "16:00", "cameroon") +
-      createGame("serbia", "16:00", "switzerland")
+    createGame("brasil", hour16, "cameroon") +
+      createGame("serbia", hour16, "switzerland")
   )
 delay = 0
 
@@ -228,22 +265,22 @@ let grupoH =
     "grupoH",
     "24/11",
     "quinta",
-    createGame("uruguay", "10:00", "south korea") +
-      createGame("portugal", "13:00", "ghana")
+    createGame("uruguay", hour10, "south korea") +
+      createGame("portugal", hour13, "ghana")
   ) +
   createCard(
     "grupoH",
     "28/11",
     "segunda",
-    createGame("south korea", "10:00", "ghana") +
-      createGame("portugal", "16:00", "uruguay")
+    createGame("south korea", hour10, "ghana") +
+      createGame("portugal", hour16, "uruguay")
   ) +
   createCard(
     "grupoH",
     "02/12",
     "sexta",
-    createGame("south korea", "12:00", "portugal") +
-      createGame("ghana", "12:00", "uruguay")
+    createGame("south korea", hour12, "portugal") +
+      createGame("ghana", hour12, "uruguay")
   )
 delay = 0
 
