@@ -12,7 +12,7 @@ let hour13 = "13:00"
 let hour16 = "16:00"
 
 if (timezone === "America/Sao_Paulo") {
-  hour7 = "08:00"
+  hour7 = "07:00"
   hour10 = "10:00"
   hour12 = "12:00"
   hour13 = "13:00"
@@ -28,7 +28,7 @@ if (timezone === "Europe/Lisbon") {
 }
 
 if (timezone === "Europe/Berlin") {
-  hour7 = "12:00"
+  hour7 = "11:00"
   hour10 = "14:00"
   hour12 = "16:00"
   hour13 = "17:00"
