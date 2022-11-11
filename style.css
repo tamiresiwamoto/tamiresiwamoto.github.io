@@ -64,6 +64,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  margin-bottom: 20px;
 }
 
 /* flex-direction: column;
@@ -193,6 +194,27 @@ select {
   padding: 15px;
   margin-top: 20px;
 }
+
+#select {
+  /* display: flex;
+  margin-top: 0px; */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+/* #select1 {
+  /* margin-right: 10px; 
+} 
+/* #select2 {
+  flex-grow: 1;
+} */
 
 /* tooltip */
 /* Tooltip text */

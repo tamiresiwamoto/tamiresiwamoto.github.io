@@ -18,18 +18,38 @@
       <header>
         <img src="./assets/logo.svg" alt="" />
         <br />
-        <div id="select">
-          <select onchange="criarGrupo(event)">
-            <option>SELECIONE O GRUPO</option>
-            <option>GRUPO A</option>
-            <option>GRUPO B</option>
-            <option>GRUPO C</option>
-            <option>GRUPO D</option>
-            <option>GRUPO E</option>
-            <option>GRUPO F</option>
-            <option>GRUPO G</option>
-            <option>GRUPO H</option>
-          </select>
+        <div id="select" class="center">
+          <div id="select1">
+            <select onchange="criarGrupo(event)">
+              <option>SELECIONE O GRUPO</option>
+              <option>GRUPO A</option>
+              <option>GRUPO B</option>
+              <option>GRUPO C</option>
+              <option>GRUPO D</option>
+              <option>GRUPO E</option>
+              <option>GRUPO F</option>
+              <option>GRUPO G</option>
+              <option>GRUPO H</option>
+            </select>
+          </div>
+          <div id="select2">
+            <select onchange="criarData(event)">
+              <option>SELECIONE A DATA</option>
+              <option>20/11</option>
+              <option>21/11</option>
+              <option>22/11</option>
+              <option>23/11</option>
+              <option>24/11</option>
+              <option>25/11</option>
+              <option>26/11</option>
+              <option>27/11</option>
+              <option>28/11</option>
+              <option>29/11</option>
+              <option>30/11</option>
+              <option>01/12</option>
+              <option>02/12</option>
+            </select>
+          </div>
         </div>
       </header>
       <main id="cards"></main>

@@ -321,3 +321,176 @@ function criarGrupo(evt) {
     document.querySelector("#cards").innerHTML = grupoH
   }
 }
+
+// criar por data
+
+let novembro20 = createCard(
+  "grupoA",
+  "20/11",
+  "domingo",
+  createGame("qatar", hour13, "ecuador")
+)
+delay = 0
+let novembro21 = createCard(
+  "grupoA",
+  "21/11",
+  "segunda",
+  createGame("england", hour10, "iran") +
+    createGame("senegal", hour13, "netherlands") +
+    createGame("united states", hour16, "wales")
+)
+delay = 0
+let novembro22 = createCard(
+  "grupoA",
+  "22/11",
+  "terça",
+  createGame("argentina", hour7, "saudi arabia") +
+    createGame("denmark", hour10, "tunisia") +
+    createGame("mexico", hour13, "poland") +
+    createGame("france", hour16, "australia")
+)
+delay = 0
+let novembro23 = createCard(
+  "grupoA",
+  "23/11",
+  "quarta",
+  createGame("morocco", hour7, "croatia") +
+    createGame("germany", hour10, "japan") +
+    createGame("spain", hour13, "costa rica") +
+    createGame("belgium", hour16, "canada")
+)
+delay = 0
+let novembro24 = createCard(
+  "grupoA",
+  "24/11",
+  "quinta",
+  createGame("switzerland", hour7, "cameroon") +
+    createGame("uruguay", hour10, "south korea") +
+    createGame("portugal", hour13, "ghana") +
+    createGame("brasil", hour16, "serbia")
+)
+delay = 0
+let novembro25 = createCard(
+  "grupoA",
+  "25/11",
+  "sexta",
+  createGame("wales", hour7, "iran") +
+    createGame("qatar", hour10, "senegal") +
+    createGame("netherlands", hour13, "ecuador") +
+    createGame("england", hour16, "united states")
+)
+delay = 0
+let novembro26 = createCard(
+  "grupoA",
+  "26/11",
+  "sábado",
+  createGame("tunisia", hour7, "australia") +
+    createGame("poland", hour10, "saudi arabia") +
+    createGame("france", hour13, "denmark") +
+    createGame("argentina", hour16, "mexico")
+)
+delay = 0
+let novembro27 = createCard(
+  "grupoA",
+  "27/11",
+  "domingo",
+  createGame("japan", hour7, "costa rica") +
+    createGame("belgium", hour10, "morocco") +
+    createGame("croatia", hour13, "canada") +
+    createGame("spain", hour16, "germany")
+)
+delay = 0
+let novembro28 = createCard(
+  "grupoA",
+  "28/11",
+  "segunda",
+  createGame("cameroon", hour7, "serbia") +
+    createGame("south korea", hour10, "ghana") +
+    createGame("brasil", hour13, "switzerland") +
+    createGame("portugal", hour16, "uruguay")
+)
+delay = 0
+let novembro29 = createCard(
+  "grupoA",
+  "29/11",
+  "terça",
+  createGame("ecuador", hour12, "senegal") +
+    createGame("netherlands", hour12, "qatar") +
+    createGame("iran", hour16, "united states") +
+    createGame("wales", hour16, "england")
+)
+delay = 0
+let novembro30 = createCard(
+  "grupoA",
+  "30/11",
+  "quarta",
+  createGame("tunisia", hour12, "france") +
+    createGame("australia", hour12, "denmark") +
+    createGame("poland", hour16, "argentina") +
+    createGame("saudi arabia", hour16, "mexico")
+)
+delay = 0
+let dezembro01 = createCard(
+  "grupoA",
+  "01/12",
+  "quinta",
+  createGame("croatia", hour12, "belgium") +
+    createGame("canada", hour12, "morocco") +
+    createGame("japan", hour16, "spain") +
+    createGame("costa rica", hour16, "germany")
+)
+delay = 0
+let dezembro02 = createCard(
+  "grupoA",
+  "02/12",
+  "sexta",
+  createGame("south korea", hour12, "portugal") +
+    createGame("ghana", hour12, "uruguay") +
+    createGame("serbia", hour16, "switzerland") +
+    createGame("cameroon", hour16, "brasil")
+)
+
+function criarData(evt) {
+  if (evt.target.value === "SELECIONE A DATA") {
+    document.querySelector("#cards").innerHTML = abertura
+  }
+  if (evt.target.value === "20/11") {
+    document.querySelector("#cards").innerHTML = novembro20
+  }
+  if (evt.target.value === "21/11") {
+    document.querySelector("#cards").innerHTML = novembro21
+  }
+  if (evt.target.value === "22/11") {
+    document.querySelector("#cards").innerHTML = novembro22
+  }
+  if (evt.target.value === "23/11") {
+    document.querySelector("#cards").innerHTML = novembro23
+  }
+  if (evt.target.value === "24/11") {
+    document.querySelector("#cards").innerHTML = novembro24
+  }
+  if (evt.target.value === "25/11") {
+    document.querySelector("#cards").innerHTML = novembro25
+  }
+  if (evt.target.value === "26/11") {
+    document.querySelector("#cards").innerHTML = novembro26
+  }
+  if (evt.target.value === "27/11") {
+    document.querySelector("#cards").innerHTML = novembro27
+  }
+  if (evt.target.value === "28/11") {
+    document.querySelector("#cards").innerHTML = novembro28
+  }
+  if (evt.target.value === "29/11") {
+    document.querySelector("#cards").innerHTML = novembro29
+  }
+  if (evt.target.value === "30/11") {
+    document.querySelector("#cards").innerHTML = novembro30
+  }
+  if (evt.target.value === "01/12") {
+    document.querySelector("#cards").innerHTML = dezembro01
+  }
+  if (evt.target.value === "02/12") {
+    document.querySelector("#cards").innerHTML = dezembro02
+  }
+}
