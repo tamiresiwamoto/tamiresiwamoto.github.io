@@ -48,6 +48,10 @@ body * {
   font-family: "Roboto", sans-serif;
 }
 
+#logo {
+  width: 400px;
+}
+
 #app {
   width: fit-content;
   margin: auto;
