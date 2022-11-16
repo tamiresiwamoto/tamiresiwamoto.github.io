@@ -204,11 +204,18 @@ h2.card-abertura {
 select {
   appearance: none;
   outline: none;
-  -webkit-appearance: none;
   font-family: "Poppins", sans-serif;
   padding: 15px;
   margin-top: 20px;
   width: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
 
 #select {
