@@ -199,6 +199,11 @@ h2.card-abertura {
     justify-content: center;
   }
 }
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 /* seletor */
 select {
@@ -220,30 +225,12 @@ select {
 }
 
 #select {
-  /* display: flex;
-  margin-top: 0px; */
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
-  /* width: fit-content; */
 }
 
-/* #select1 {
-  width: 100px;
-  margin-right: 30px;
-} */
-
-/* #select2 {
-  width: 100px;
-} */
-
-.center {
-  /* width: 60%; */
-}
-
-/* tooltip */
-/* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: auto;
