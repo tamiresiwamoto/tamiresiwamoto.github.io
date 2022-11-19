@@ -35,6 +35,22 @@ if (timezone === "Europe/Berlin") {
   hour16 = "20:00"
 }
 
+if (timezone === "America/New_York") {
+  hour7 = "05:00"
+  hour10 = "08:00"
+  hour12 = "10:00"
+  hour13 = "11:00"
+  hour16 = "14:00"
+}
+
+if (timezone === "America/Toronto") {
+  hour7 = "05:00"
+  hour10 = "08:00"
+  hour12 = "10:00"
+  hour13 = "11:00"
+  hour16 = "14:00"
+}
+
 function createGame(player1, hour, player2) {
   return `
     <li>
@@ -285,7 +301,7 @@ let grupoH =
 delay = 0
 
 function criarGrupo(evt) {
-  if (evt.target.value === "SELECIONE O GRUPO") {
+  if (evt.target.value === "GRUPO") {
     document.querySelector("#cards").innerHTML = abertura
   }
 
@@ -451,7 +467,7 @@ let dezembro02 = createCard(
 )
 
 function criarData(evt) {
-  if (evt.target.value === "SELECIONE A DATA") {
+  if (evt.target.value === "DATA") {
     document.querySelector("#cards").innerHTML = abertura
   }
   if (evt.target.value === "20/11") {
