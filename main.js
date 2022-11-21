@@ -137,7 +137,7 @@ let grupoB =
     "grupoB",
     "21/11",
     "segunda",
-    createGame("england", hour10, "iran") +
+    createGame("england", "6 X 2", "iran") +
       createGame("united states", hour16, "wales")
   ) +
   createCard(
@@ -351,7 +351,7 @@ let novembro21 = createCard(
   "grupoA",
   "21/11",
   "segunda",
-  createGame("england", hour10, "iran") +
+  createGame("england", "6 X 2", "iran") +
     createGame("senegal", hour13, "netherlands") +
     createGame("united states", hour16, "wales")
 )
