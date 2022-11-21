@@ -104,7 +104,7 @@ let abertura = createCardAbertura(
   "ABERTURA",
   "20/11",
   "domingo",
-  createGame("qatar", hour13, "ecuador")
+  createGame("qatar", "0 X 2", "ecuador")
 )
 
 document.querySelector("#cards").innerHTML = abertura
