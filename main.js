@@ -344,7 +344,7 @@ let novembro20 = createCard(
   "grupoA",
   "20/11",
   "domingo",
-  createGame("qatar", hour13, "ecuador")
+  createGame("qatar", "0 X 2", "ecuador")
 )
 delay = 0
 let novembro21 = createCard(
