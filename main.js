@@ -162,7 +162,7 @@ let grupoC =
     "22/11",
     "terça",
     createGame("argentina", "1 X 2", "saudi arabia") +
-      createGame("mexico", hour13, "poland")
+      createGame("mexico", "0 X 0", "poland")
   ) +
   createCard(
     "grupoC",
@@ -185,8 +185,8 @@ let grupoD =
     "grupoD",
     "22/11",
     "terça",
-    createGame("denmark", hour10, "tunisia") +
-      createGame("france", hour16, "australia")
+    createGame("denmark", "0 X 0", "tunisia") +
+      createGame("france", "4 X 1", "australia")
   ) +
   createCard(
     "grupoD",
@@ -361,9 +361,9 @@ let novembro22 = createCard(
   "22/11",
   "terça",
   createGame("argentina", "1 X 2", "saudi arabia") +
-    createGame("denmark", hour10, "tunisia") +
-    createGame("mexico", hour13, "poland") +
-    createGame("france", hour16, "australia")
+    createGame("denmark", "0 X 0", "tunisia") +
+    createGame("mexico", "0 X 0", "poland") +
+    createGame("france", "4 X 1", "australia")
 )
 delay = 0
 let novembro23 = createCard(
