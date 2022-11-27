@@ -217,7 +217,7 @@ let grupoE =
     "27/11",
     "domingo",
     createGame("japan", "0 X 1", "costa rica") +
-      createGame("spain", "1 X 0", "germany")
+      createGame("spain", "1 X 1", "germany")
   ) +
   createCard(
     "grupoE",
@@ -413,7 +413,7 @@ let novembro27 = createCard(
   createGame("japan", "0 X 1", "costa rica") +
     createGame("belgium", "0 X 2", "morocco") +
     createGame("croatia", "4 X 1", "canada") +
-    createGame("spain", "0 X 1", "germany")
+    createGame("spain", "1 X 1", "germany")
 )
 delay = 0
 let novembro28 = createCard(
