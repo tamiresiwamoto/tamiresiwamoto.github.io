@@ -175,8 +175,8 @@ let grupoC =
     "grupoC",
     "30/11",
     "quarta",
-    createGame("poland", hour16, "argentina") +
-      createGame("saudi arabia", hour16, "mexico")
+    createGame("poland", "0 X 2", "argentina") +
+      createGame("saudi arabia", "1 X 2", "mexico")
   )
 delay = 0
 
@@ -199,8 +199,8 @@ let grupoD =
     "grupoD",
     "30/11",
     "quarta",
-    createGame("tunisia", hour12, "france") +
-      createGame("australia", hour12, "denmark")
+    createGame("tunisia", "1 X 0", "france") +
+      createGame("australia", "1 X 0", "denmark")
   )
 delay = 0
 
@@ -223,8 +223,8 @@ let grupoE =
     "grupoE",
     "01/12",
     "quinta",
-    createGame("japan", hour16, "spain") +
-      createGame("costa rica", hour16, "germany")
+    createGame("japan", "2 X 1", "spain") +
+      createGame("costa rica", "2 X 4", "germany")
   )
 delay = 0
 
@@ -440,20 +440,20 @@ let novembro30 = createCard(
   "grupoA",
   "30/11",
   "quarta",
-  createGame("tunisia", hour12, "france") +
-    createGame("australia", hour12, "denmark") +
-    createGame("poland", hour16, "argentina") +
-    createGame("saudi arabia", hour16, "mexico")
+  createGame("tunisia", "1 X 0", "france") +
+    createGame("australia", "1 X 0", "denmark") +
+    createGame("poland", "0 X 2", "argentina") +
+    createGame("saudi arabia", "1 X 2", "mexico")
 )
 delay = 0
 let dezembro01 = createCard(
   "grupoA",
   "01/12",
   "quinta",
-  createGame("croatia", hour12, "belgium") +
-    createGame("canada", hour12, "morocco") +
-    createGame("japan", hour16, "spain") +
-    createGame("costa rica", hour16, "germany")
+  createGame("croatia", "0 X 0", "belgium") +
+    createGame("canada", "1 X 2", "morocco") +
+    createGame("japan", "2 X 1", "spain") +
+    createGame("costa rica", "2 X 4", "germany")
 )
 delay = 0
 let dezembro02 = createCard(
